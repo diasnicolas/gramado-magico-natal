@@ -108,7 +108,7 @@ const ContactSection = () => {
                   Solicite Seu Orçamento
                 </CardTitle>
                 <CardDescription className="text-base">
-                  Receba uma proposta personalizada em minutos
+                  Montaremos o melhor pacote para você
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
@@ -133,26 +133,16 @@ const ContactSection = () => {
                     Horário de Atendimento
                   </div>
                   <p className="text-sm text-foreground font-medium">
-                    Segunda a Domingo: 8h às 22h
+                    Todos os dias das 8h às 22h
                   </p>
                   <p className="text-xs text-muted-foreground">
-                    WhatsApp: 24 horas
+                    Atendimento facilitado no Whatsapp
                   </p>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="border-0 shadow-md bg-gradient-to-r from-secondary/10 to-primary/10">
-              <CardContent className="p-6 text-center">
-                <h4 className="font-semibold text-foreground mb-2">🎄 Oferta Especial Natal Luz</h4>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Reserve até 31/01 e ganhe 15% de desconto + transfer gratuito
-                </p>
-                <Button variant="christmas" size="sm">
-                  Aproveitar Oferta
-                </Button>
-              </CardContent>
-            </Card>
+           
           </div>
         </div>
       </div>

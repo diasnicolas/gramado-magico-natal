@@ -12,7 +12,7 @@ const Hero = () => {
           alt="Natal Luz em Gramado - A magia do Natal" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/60 to-accent/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/50 via-primary/80 to-accent/80"></div>
       </div>
 
       {/* Snow Effect */}
@@ -22,7 +22,7 @@ const Hero = () => {
       <div className="relative z-20 container mx-auto px-4 text-center text-white">
         <div className="flex items-center justify-center gap-2 mb-4">
           <Sparkles className="h-6 w-6 text-secondary animate-pulse" />
-          <span className="text-secondary font-semibold text-lg">Natal Luz 2024</span>
+          <span className="text-secondary font-semibold text-lg">Natal Luz {new Date().getFullYear()}</span>
           <Sparkles className="h-6 w-6 text-secondary animate-pulse" />
         </div>
         
@@ -40,7 +40,7 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-12">
           <div className="flex items-center gap-2 text-white/90">
             <Calendar className="h-5 w-5" />
-            <span className="font-medium">Novembro a Janeiro</span>
+            <span className="font-medium">23 de Outubro a 18 de Janeiro</span>
           </div>
           <div className="flex items-center gap-2 text-white/90">
             <MapPin className="h-5 w-5" />
@@ -59,17 +59,11 @@ const Hero = () => {
             <Sparkles className="h-5 w-5 group-hover:animate-spin" />
             Reservar Agora
           </Button>
-          <Button variant="secondary" size="hero" className="bg-white/20 text-white border-white/30 hover:bg-white/30 backdrop-blur-sm">
-            Ver Pacotes
+          <Button onClick={() => {
+    document.getElementById("sobre")?.scrollIntoView({ behavior: "smooth" });
+  }} variant="secondary" size="hero" className="bg-white/40 text-white border-white/50 hover:bg-white/30 backdrop-blur-sm">
+            Conhecer mais
           </Button>
-        </div>
-      </div>
-
-      {/* Floating Elements */}
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-white/60">
-        <div className="flex flex-col items-center">
-          <span className="text-sm mb-2">Descubra mais</span>
-          <div className="w-px h-8 bg-white/40"></div>
         </div>
       </div>
     </section>
