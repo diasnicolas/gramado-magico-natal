@@ -143,7 +143,7 @@ const TouristSpots = () => {
                 </Card>
               </DialogTrigger>
               
-              <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+              <DialogContent className="w-[95vw] max-w-2xl max-h-[90vh] overflow-y-auto">
                 <DialogHeader>
                   <DialogTitle className="text-2xl flex items-center gap-2">
                     <MapPin className="h-6 w-6 text-primary" />
